@@ -1,0 +1,119 @@
+/* Main Content Area */
+.main-content {
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Main Heading */
+.resources-h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* Section Titles */
+.resources-h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: #008C8C;
+}
+
+/* Paragraph Styling */
+.resources-p {
+    font-size: var(--font-size-subheading);
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px; /* Make the corners rounder */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensures equal height for all cards */
+    display: flex;
+    flex-direction: column; /* Keeps the content aligned */
+    background-color: #ffffff;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+    flex-grow: 1; /* Ensures the card body grows to fill available space */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px; /* Adds space before the button */
+}
+
+/* Button Styling */
+.card .btn {
+    font-weight: bold;
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+/* Links */
+.main-content a {
+    color: #ff9d00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Equal Height for Cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    .main-content h1 {
+        font-size: 2em;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%; /* Stack cards on mobile */
+    }
+}

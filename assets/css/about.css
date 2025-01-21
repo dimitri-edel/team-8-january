@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-body {
+    flex-grow: 1;
+}
+.card {
+    min-height: 450px;
+}
+
+.about-h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-text a {
+    color: #008C80;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card-text a:hover,
+.card-text a:focus {
+    color: #005f5f;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.card-text a:active {
+    color: #003c3c;
+}
+
+.card-text a:focus {
+    outline: 2px solid #005f5f;
+    outline-offset: 4px;
+}

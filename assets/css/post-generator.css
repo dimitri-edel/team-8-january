@@ -1,0 +1,348 @@
+/* General Styles */
+.post-customization-panel {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-heading);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+.hero-content p {
+    font-size: var(--font-size-subheading);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+#post-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-selector h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#post-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#post-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#post-text {
+    flex: 1;
+    width: 50%;
+    min-width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+#post-text:focus {
+    border-color: #008C8C;
+    box-shadow: 0 0 6px rgba(255, 173, 173, 0.6);
+    outline: none;
+}
+
+#post-image {
+    width: 400px;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Navigation Pills */
+.nav-pills {
+    border-bottom: 2px solid #008C8C;
+    margin-bottom: 30px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 30px 30px 0 0;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #008C8C;
+    border-color: #008C8C;
+    font-weight: 600;
+}
+
+/* Button Styles */
+.mt-4.text-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+button.btn {
+    font-size: var(--font-size-base);
+    padding: 14px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Primary Button (Teal) */
+button.primary {
+    background-color: #008C8C; /* Teal */
+    border-color: #008C8C;
+    color: #fff;
+}
+
+button.primary:hover {
+    background-color: #006f6f; /* Darker Teal */
+    border-color: #006f6f;
+    color: #fff;
+}
+
+/* Secondary Button (Yellow) */
+button.secondary {
+    background-color: #ffbb33; /* Yellow */
+    border-color: #ffbb33;
+    color: #fff;
+}
+
+button.secondary:hover {
+    background-color: #e6a800; /* Darker Yellow */
+    border-color: #e6a800;
+    color: #fff;
+}
+
+/* Success Button (Teal) */
+button.success {
+    background-color: #008C8C; /* Teal */
+    border-color: #008C8C;
+    color: #fff;
+}
+
+button.success:hover {
+    background-color: #006f6f; /* Darker Teal */
+    border-color: #006f6f;
+    color: #fff;
+}
+
+
+/* Share Button and Dropdown Menu */
+.share-button-container {
+    position: relative;
+    display: inline-block;   
+}
+
+.share-button {
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #ffbb33 !important;
+    color: #f1f1f1;
+    border: none;
+}
+
+.share-button:hover {
+    background-color: #ddd;
+}
+
+.share-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #ffbb33 !important;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
+}
+
+.share-menu.show {
+    display: block;
+}
+
+.share-menu button {
+    display: block;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    text-align: left;
+    background: none;
+    cursor: pointer;
+}
+
+/* Icon Styles */
+.twitter-icon {
+    color: #1da1f2;
+}
+
+.facebook-icon {
+    color: #3b5998;
+}
+
+.linkedin-icon {
+    color: #0077b5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mt-4.text-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button.btn {
+        width: auto;
+    }
+
+    .share-button-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .share-button {
+        margin-top: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .post-customization-panel {
+        padding: 20px;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    #post-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #post-text {
+        width: 100%;
+    }
+
+    #post-image {
+        width: 100%;
+        max-height: 200px;
+    }
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  [data-aos="zoom-in"] {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  button {
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-5px);
+    background-color: #ff7043;
+  }
+  
+  button:active {
+    transform: translateY(0);
+    background-color: #f4511e;
+  }
+  
+  /* Share button styles */
+  .share-menu {
+    display: none;
+    margin-top: 1px;
+  }
+  
+  .share-button-container:hover .share-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

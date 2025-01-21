@@ -1,0 +1,123 @@
+.main-content {
+    flex: 1;
+}
+
+.hero {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-heading);
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--white-color);
+}
+
+.hero-content p {
+    font-size: var(--font-size-subheading);
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.cta-buttons .btn {
+    font-size: var(--font-size-base);
+    padding: 14px 35px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* Ensure the buttons are equal width */
+    flex: 1; /* This makes both buttons take up equal space */
+    min-width: 200px; /* You can set a minimum width to ensure buttons are not too small */
+    text-align: center; /* Ensures text stays centered in the button */
+}
+
+.primary {
+    background-color: #ffbb33;
+    border-color: #d29418;
+    color: var(--white-color);
+}
+
+.primary:hover {
+    background-color: #ffffff;
+    border-color: #ffbb33;
+    color: #ffbb33;
+}
+
+.secondary {
+    background-color: #008C8C;
+    border-color: #008C8C;
+    color: var(--white-color);
+}
+
+.secondary:hover {
+    background-color: #ffffff;
+    border-color: #008C8C;
+    color: #008C8C;
+}
+
+
+#carouselExampleCaptions {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#carouselExampleCaptions .carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header text */
+.page-title {
+    font-size: var(--font-size-heading);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: var(--font-size-subheading);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+/* Subheading styles */
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.action-title,
+.form-title,
+.statistics-title {
+    font-size: 22px;
+    color: #f39c12;
+    margin-top: 20px;
+}
+
+/* General paragraph styling */
+.section-description,
+.action-description,
+.form-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+ul.key-terms,
+ul.facts-list,
+ul.statistics-list,
+ul.charity-list,
+ul.report-list {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul.charity-list li,
+ul.report-list li {
+    margin-bottom: 15px;
+}
+
+/* Link styles */
+a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for each section */
+.section-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Add animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Charity and Report links styles */
+.charity-link,
+.report-link {
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.charity-link:hover,
+.report-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer-placeholder {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Particles background */
+.particles-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
